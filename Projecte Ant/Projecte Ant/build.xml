@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Calculador" default="default" basedir=".">
+    <import file="nbproject/build-impl.xml"/>
+    <echo message="Hello, world"/>
+    <mkdir dir="${dist}"/>
+    <cccheckin viewpath="c:/views/viewdir/afile"
+           commentfile="acomment.txt"
+           nowarn="true"
+           identical="true"/>
+    <tar destfile="${dist}/manual.tar" basedir="htdocs/manual"/>
+   <gzip destfile="${dist}/manual.tar.gz" src="${dist}/manual.tar"/>
+   <ccmcheckin file="c:/wa/com/foo/MyFile.java"
+            comment="mycomment"/>
+</project>
